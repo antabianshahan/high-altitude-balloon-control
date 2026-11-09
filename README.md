@@ -19,13 +19,13 @@ Scientific balloons are used for weather monitoring, astronomy and UAV launches,
 
 - buoyancy $F_B = \rho_a V g$
 - weight $F_W = m_t g$
-- drag $F_D = \tfrac12 \rho_a C_D A_B\, u|u|$
+- drag $F_D = \tfrac12 \rho_a C_D A_B\  u|u|$
 
 Gondola rotation follows $\tau = I\alpha$.
 
 **System sizing.** A stronger motor is heavier, and that changes the whole balloon:
 
-- **Motor regression.** Fitting data from real brushless motors gave $m \approx 0.006235\,T^{1.2}$, with m in grams and T in g·m.
+- **Motor regression.** Fitting data from real brushless motors gave $m \approx 0.006235\ T^{1.2}$, with m in grams and T in g·m.
 - **Three-variable fixed-point optimisation.** Balloon volume, total mass and required thrust were solved together. The volume depends on the mass, the thrust needed against drag depends on the volume, and the mass depends on the motor's thrust. The iteration converged in **14 iterations**.
 
 **Control and simulation at 7 km.**
